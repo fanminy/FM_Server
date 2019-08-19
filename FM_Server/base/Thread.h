@@ -2,14 +2,15 @@
 #define THREAD_H
 
 #include<iostream>
+#include<stdio.h>
+#include<string>
 #include<pthread.h>
 #include<assert.h>
 #include<functional>
 #include<atomic>
-
-#include"Mutex.h"
+#include<sys/prctl.h>
+#include "Mutex.h"
 #include"CountDownLatch.h"
-#include"Condition.h"
 
 namespace FM_Server
 {

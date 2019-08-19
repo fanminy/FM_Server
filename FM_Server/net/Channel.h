@@ -5,9 +5,9 @@
 #include<sys/epoll.h>
 #include<memory>
 #include<string>
-#include"EventLoop.h"
+//#include"EventLoop.h"
 #include "../log/Logger.h"
-
+#include <assert.h>
 namespace FM_Server
 {
 namespace net
@@ -41,7 +41,7 @@ class Channel
     int getIndex(){return index_;}
     int getFd(){return fd_;}
     int getEvent(){return event_;}
-    bool isNonerEvent(){return event_==NoneEvent;}
+    bool isNoneEvent(){return event_==NoneEvent;}
     bool isWriting(){return event_==WriteEvent;}
     bool isReading(){return event_==ReadEvent;}
 

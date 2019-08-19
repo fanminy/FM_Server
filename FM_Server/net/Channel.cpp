@@ -1,4 +1,5 @@
 #include "Channel.h"
+#include "EventLoop.h"
 
 const int FM_Server::net::Channel::NoneEvent=0;
 const int FM_Server::net::Channel::ReadEvent=EPOLLIN;

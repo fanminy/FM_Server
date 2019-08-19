@@ -34,7 +34,7 @@ class Condition
             assert(pthread_cond_broadcast(&cond_)==0);
         }
 
-        void waitForSeconds(int seconds);
+        bool waitForSeconds(int seconds);
 
 
     private:
